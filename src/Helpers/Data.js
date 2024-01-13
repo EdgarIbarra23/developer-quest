@@ -579,11 +579,11 @@ const data = [
         "timeYoutube": "9 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "https://www.youtube.com/@javascriptmastery",
-            "facebook": "facebook.com/LaGeekipediaDeErnesto",
-            "twitter": "twitter.com/LaGeekipedia",
+            "youtube": "https://www.youtube.com/@LaGeekipediaDeErnesto",
+            "facebook": "https://www.facebook.com/LaGeekipediaDeErnesto/",
+            "twitter": "https://www.twitter.com/LaGeekipedia",
             "twitch": "",
-            "instagram": "instagram.com/lageekipedia",
+            "instagram": "https://www.instagram.com/lageekipedia",
             "tiktok": ""
         },
         "teaches": {
@@ -646,12 +646,12 @@ const data = [
         "timeYoutube": "7 meses",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@SergieCode",
-            "facebook": "facebook.com/sergiecodeok",
-            "twitter": "twitter.com/sergiecode",
+            "youtube": "https://www.youtube.com/@SergieCode",
+            "facebook": "https://www.facebook.com/sergiecodeok",
+            "twitter": "https://www.twitter.com/sergiecode",
             "twitch": "",
-            "instagram": "instagram.com/sergiecode",
-            "tiktok": "tiktok.com/@sergiecode"
+            "instagram": "https://www.instagram.com/sergiecode",
+            "tiktok": "https://www.tiktok.com/@sergiecode"
         },
         "teaches": {
             "projectsFrontEnd": false,
@@ -682,11 +682,11 @@ const data = [
         "timeYoutube": "3 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@atl.academy",
-            "facebook": "facebook.com/LucasMoy.dev",
+            "youtube": "https://www.youtube.com/@atl.academy",
+            "facebook": "https://www.facebook.com/LucasMoy.dev",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/lucasmoy.dev",
+            "instagram": "https://www.instagram.com/lucasmoy.dev",
             "tiktok": ""
         },
         "teaches": {
@@ -730,7 +730,7 @@ const data = [
         "idioma": "Ingles",
         "socialNetworks": {
             "youtube": "http://www.youtube.com/@LaingRaven",
-            "facebook": "facebook.com/Java-Swing-Programming-107380654949202",
+            "facebook": "https://www.facebook.com/Java-Swing-Programming-107380654949202",
             "twitter": "",
             "twitch": "",
             "instagram": "",
@@ -756,15 +756,15 @@ const data = [
     {
         "id": 6,
         "name": "La Casa Informática",
-        "logo": "https://yt3.googleusercontent.com/LFYhfNiKUm_71SHJSQfuNxe3dYkg7vmJWApNyJJx-1nVpw5CozqJWeMvEj6bgog_Hd05nk9vBk4=s176-c-k-c0x00ffffff-no-rj",
+        "logo": "https://yt3.googleusercontent.com/7oXph7Sn_FoXeK8DPsVUVCkkAoM5H97o5fmi85d1ZKQFd0_CWd9ROCTUYvrDLjSzcZP2h0ij9A=s176-c-k-c0x00ffffff-no-rj",
         "timeYoutube": "9 meses",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@LaCasaInformatica",
+            "youtube": "https://www.youtube.com/@LaCasaInformatica",
             "facebook": "",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/leonardo_palomino1",
+            "instagram": "https://www.instagram.com/leonardo_palomino1",
             "tiktok": "https://www.tiktok.com/@lacasa_informatica"
         },
         "teaches": {
@@ -795,8 +795,8 @@ const data = [
         "timeYoutube": "3 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@CodersFree",
-            "facebook": "facebook.com/codersfree",
+            "youtube": "https://www.youtube.com/@CodersFree",
+            "facebook": "https://www.facebook.com/codersfree",
             "twitter": "",
             "twitch": "",
             "instagram": "https://www.instagram.com/coders.free/",
@@ -836,7 +836,7 @@ const data = [
         "timeYoutube": "1 año",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@mutagenX",
+            "youtube": "https://www.youtube.com/@mutagenX",
             "facebook": "",
             "twitter": "",
             "twitch": "",
@@ -861,16 +861,16 @@ const data = [
     {
         "id": 9,
         "name": "Programación CMV",
-        "logo": "https://yt3.googleusercontent.com/EICBjtYm-kxj7DKQ5LNBdaQjnTv9XOSehZeabSQ5b9O8B2CWH9X6xlSdlZd6z9CWl1aGNOoC-7I=s176-c-k-c0x00ffffff-no-rj",
+        "logo": "https://yt3.googleusercontent.com/yWWzhqx2L0mxpbQgIeID25EOrlMExq2R8wAjLAwcU536gir9O9QkGp7Aqac1gIYh141C0CT5ke8=s176-c-k-c0x00ffffff-no-rj",
         "timeYoutube": "5 meses",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@ProgramacionCMV-sb3zx",
+            "youtube": "https://www.youtube.com/@ProgramacionCMV-sb3zx",
             "facebook": "",
             "twitter": "",
             "twitch": "",
             "instagram": "",
-            "tiktok": "tiktok.com/@carlos.marrugo_"
+            "tiktok": "https://www.tiktok.com/@carlos.marrugo_"
         },
         "teaches": {
             "projectsFrontEnd": true,
@@ -898,7 +898,7 @@ const data = [
         "timeYoutube": "2 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@webtd97",
+            "youtube": "https://www.youtube.com/@webtd97",
             "facebook": "",
             "twitter": "",
             "twitch": "",
@@ -938,11 +938,11 @@ const data = [
         "timeYoutube": "3 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@vidainformatico-as",
-            "facebook": "web.facebook.com/Vida-Informático-102763128069281",
+            "youtube": "https://www.youtube.com/@vidainformatico-as",
+            "facebook": "https://www.facebook.com/Vida-Informático-102763128069281",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/vida_informatico",
+            "instagram": "https://www.instagram.com/vida_informatico",
             "tiktok": ""
         },
         "teaches": {
@@ -973,10 +973,10 @@ const data = [
         "timeYoutube": "3 años",
         "idioma": "Ingles",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@BroCodez",
+            "youtube": "https://www.youtube.com/@BroCodez",
             "facebook": "",
             "twitter": "",
-            "twitch": "twitch.tv/chocobro",
+            "twitch": "https://www.twitch.tv/chocobro",
             "instagram": "",
             "tiktok": ""
         },
@@ -1014,16 +1014,16 @@ const data = [
     {
         "id": 13,
         "name": "EL CODIGO BRAVO",
-        "logo": "https://yt3.googleusercontent.com/w6Y6Rv9ILSDi7zCUNLWa2ZdNkXc0BVUE_GrcQTXcPoWLebXLHhSoojHqjhyIYq6_vP4EIlAPHw=s176-c-k-c0x00ffffff-no-rj",
+        "logo": "https://yt3.googleusercontent.com/3dkWkpWXsBdu2BINmwbowWH53oRcF9QZWfKxHej0FqeMmdMOOL-yPMTxbTv1wjcyy6W_6oHi=s176-c-k-c0x00ffffff-no-rj",
         "timeYoutube": "1 año",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@elcodigobravo",
+            "youtube": "https://www.youtube.com/@elcodigobravo",
             "facebook": "",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/elcodigobravo",
-            "tiktok": "tiktok.com/@elcodigobravo?_t=8XYXJukfNqv&_r=1"
+            "instagram": "https://www.instagram.com/elcodigobravo",
+            "tiktok": "https://www.tiktok.com/@elcodigobravo?_t=8XYXJukfNqv&_r=1"
         },
         "teaches": {
             "projectsFrontEnd": true,
@@ -1046,16 +1046,16 @@ const data = [
     {
         "id": 14,
         "name": "Programación Fácil",
-        "logo": "",
+        "logo": "https://yt3.googleusercontent.com/LM37g15Vrk2pDXevairPWDanxg-uw66iV2uK089DoY04ygAQtGQhIVdOUGXw-4RkXepwgFVm=s176-c-k-c0x00ffffff-no-rj",
         "timeYoutube": "4 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@ProgramacionFacilYT",
-            "facebook": "facebook.com/thehittos",
-            "twitter": "twitter.com/TheHittos",
+            "youtube": "https://www.youtube.com/@ProgramacionFacilYT",
+            "facebook": "https://www.facebook.com/thehittos",
+            "twitter": "https://www.twitter.com/TheHittos",
             "twitch": "",
-            "instagram": "instagram.com/programacion_facil",
-            "tiktok": "tiktok.com/@programacion.facil"
+            "instagram": "https://www.instagram.com/programacion_facil",
+            "tiktok": "https://www.tiktok.com/@programacion.facil"
         },
         "teaches": {
             "projectsFrontEnd": false,
@@ -1096,7 +1096,7 @@ const data = [
         "timeYoutube": "3 meses",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@ProgramandoConElNovato",
+            "youtube": "https://www.youtube.com/@ProgramandoConElNovato",
             "facebook": "",
             "twitter": "",
             "twitch": "",
@@ -1128,11 +1128,11 @@ const data = [
         "timeYoutube": "2 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@SINERGIA_AR",
+            "youtube": "https://www.youtube.com/@SINERGIA_AR",
             "facebook": "",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/sinergia.store_oficial",
+            "instagram": "https://www.instagram.com/sinergia.store_oficial",
             "tiktok": ""
         },
         "teaches": {
@@ -1163,15 +1163,15 @@ const data = [
     {
         "id": 17,
         "name": "Códigos de Programación - MR",
-        "logo": "https://yt3.googleusercontent.com/zqyaexZtCEB8f6IH7udHPP34uA8NfSgGtoXnt_YWK-4svfkQQf8Nt1w8bwfkl8catmEWAGlM0Q=s176-c-k-c0x00ffffff-no-rj",
+        "logo": "https://yt3.googleusercontent.com/1hH5ri2j7raaW0nqzfgsLgUUbP3MGVFLiVnWmrU2fNSOaVgGkkriZEPp-hNMOo3DWLUxXJz9dw=s176-c-k-c0x00ffffff-no-rj",
         "timeYoutube": "6 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@codigosdeprogramacion",
-            "facebook": "facebook.com/CodigosProgramacion",
+            "youtube": "https://www.youtube.com/@codigosdeprogramacion",
+            "facebook": "https://www.facebook.com/CodigosProgramacion",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/codigosdprogramacion",
+            "instagram": "https://www.instagram.com/codigosdprogramacion",
             "tiktok": ""
         },
         "teaches": {
@@ -1200,7 +1200,6 @@ const data = [
 
             "queryLanguajes": [
                 queryLanguajes[1],
-
             ],
 
             "ide": [
@@ -1216,11 +1215,11 @@ const data = [
         "timeYoutube": "5 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@HolaMundoDev",
-            "facebook": "facebook.com/profile.php?id=61552336410974",
+            "youtube": "https://www.youtube.com/@HolaMundoDev",
+            "facebook": "https://www.facebook.com/profile.php?id=61552336410974",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/academiaholamundo",
+            "instagram": "https://www.instagram.com/academiaholamundo",
             "tiktok": ""
         },
         "teaches": {
@@ -1257,8 +1256,8 @@ const data = [
         "timeYoutube": "3 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@SLeeDw",
-            "facebook": "web.facebook.com/sleedwdesarrolloweb",
+            "youtube": "https://www.youtube.com/@SLeeDw",
+            "facebook": "https://www.facebook.com/sleedwdesarrolloweb",
             "twitter": "",
             "twitch": "",
             "instagram": "",
@@ -1287,11 +1286,11 @@ const data = [
         "timeYoutube": "1 año",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@OpenBootcamp",
+            "youtube": "https://www.youtube.com/@OpenBootcamp",
             "facebook": "",
-            "twitter": "twitter.com/Open_Bootcamp",
-            "twitch": "twitch.tv/openbootcamp",
-            "instagram": "instagram.com/openbootcamp_",
+            "twitter": "https://www.twitter.com/Open_Bootcamp",
+            "twitch": "https://www.twitch.tv/openbootcamp",
+            "instagram": "https://www.instagram.com/openbootcamp_",
             "tiktok": ""
         },
         "teaches": {
@@ -1341,9 +1340,9 @@ const data = [
         "timeYoutube": "7 años",
         "idioma": "",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@ProgramacionATS",
-            "facebook": "facebook.com/programacionats",
-            "twitter": "twitter.com/AlejandroMTSA",
+            "youtube": "https://www.youtube.com/@ProgramacionATS",
+            "facebook": "https://www.facebook.com/programacionats",
+            "twitter": "https://www.twitter.com/AlejandroMTSA",
             "twitch": "",
             "instagram": "",
             "tiktok": ""
@@ -1376,11 +1375,11 @@ const data = [
         "timeYoutube": "3 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@AristiDevs",
+            "youtube": "https://www.youtube.com/@AristiDevs",
             "facebook": "",
-            "twitter": "twitter.com/aristidevs",
-            "twitch": "twitch.tv/aristidevs",
-            "instagram": "instagram.com/aristidevs/?hl=es",
+            "twitter": "https://www.twitter.com/aristidevs",
+            "twitch": "https://www.twitch.tv/aristidevs",
+            "instagram": "https://www.instagram.com/aristidevs/?hl=es",
             "tiktok": ""
         },
         "teaches": {
@@ -1410,9 +1409,9 @@ const data = [
         "timeYoutube": "14 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@FalconMasters",
-            "facebook": "facebook.com/falconmasters",
-            "twitter": "twitter.com/falconmasters",
+            "youtube": "https://www.youtube.com/@FalconMasters",
+            "facebook": "https://www.facebook.com/falconmasters",
+            "twitter": "https://www.twitter.com/falconmasters",
             "twitch": "",
             "instagram": "",
             "tiktok": ""
@@ -1458,9 +1457,9 @@ const data = [
         "timeYoutube": "2 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@freecodecampespanol",
+            "youtube": "https://www.youtube.com/@freecodecampespanol",
             "facebook": "",
-            "twitter": "twitter.com/freecodecampES",
+            "twitter": "https://www.twitter.com/freecodecampES",
             "twitch": "",
             "instagram": "",
             "tiktok": ""
@@ -1497,10 +1496,10 @@ const data = [
         "timeYoutube": "10 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@CarlosAzaustre",
+            "youtube": "https://www.youtube.com/@CarlosAzaustre",
             "facebook": "",
             "twitter": "",
-            "twitch": "twitch.tv/carlosazaustre",
+            "twitch": "https://www.twitch.tv/carlosazaustre",
             "instagram": "",
             "tiktok": ""
         },
@@ -1536,7 +1535,7 @@ const data = [
         "timeYoutube": "5 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@FaztCode",
+            "youtube": "https://www.youtube.com/@FaztCode",
             "facebook": "",
             "twitter": "",
             "twitch": "",
@@ -1600,7 +1599,7 @@ const data = [
         "timeYoutube": "6 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@soyjab",
+            "youtube": "https://www.youtube.com/@soyjab",
             "facebook": "",
             "twitter": "",
             "twitch": "",
@@ -1637,11 +1636,11 @@ const data = [
         "timeYoutube": "2 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@midulive",
+            "youtube": "https://www.youtube.com/@midulive",
             "facebook": "",
-            "twitter": "twitter.com/midudev",
-            "twitch": "twitch.tv/midudev",
-            "instagram": "instagram.com/midu.dev",
+            "twitter": "https://www.twitter.com/midudev",
+            "twitch": "https://www.twitch.tv/midudev",
+            "instagram": "https://www.instagram.com/midu.dev",
             "tiktok": ""
         },
         "teaches": {
@@ -1674,11 +1673,11 @@ const data = [
         "timeYoutube": "5 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@midudev",
-            "facebook": "facebook.com/pg/midudev.frontend",
-            "twitter": "twitter.com/midudev",
-            "twitch": "twitch.tv/midudev",
-            "instagram": "instagram.com/midu.dev",
+            "youtube": "https://www.youtube.com/@midudev",
+            "facebook": "https://www.facebook.com/pg/midudev.frontend",
+            "twitter": "https://www.twitter.com/midudev",
+            "twitch": "https://www.twitch.tv/midudev",
+            "instagram": "https://www.instagram.com/midu.dev",
             "tiktok": ""
         },
         "teaches": {
@@ -1711,11 +1710,11 @@ const data = [
         "timeYoutube": "6 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@FaztTech",
-            "facebook": "facebook.com/fazttech",
-            "twitter": "twitter.com/FaztTech",
+            "youtube": "https://www.youtube.com/@FaztTech",
+            "facebook": "https://www.facebook.com/fazttech",
+            "twitter": "https://www.twitter.com/FaztTech",
             "twitch": "",
-            "instagram": "instagram.com/fazttech",
+            "instagram": "https://www.instagram.com/fazttech",
             "tiktok": ""
         },
         "teaches": {
@@ -1766,11 +1765,11 @@ const data = [
         "timeYoutube": "8 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@mouredev",
-            "facebook": "facebook.com/mouredev",
-            "twitter": "twitter.com/MoureDev",
-            "twitch": "twitch.tv/mouredev",
-            "instagram": "instagram.com/mouredev",
+            "youtube": "https://www.youtube.com/@mouredev",
+            "facebook": "https://www.facebook.com/mouredev",
+            "twitter": "https://www.twitter.com/MoureDev",
+            "twitch": "https://www.twitch.tv/mouredev",
+            "instagram": "https://www.instagram.com/mouredev",
             "tiktok": "https://www.tiktok.com/@mouredev"
         },
         "teaches": {
@@ -1811,9 +1810,9 @@ const data = [
         "timeYoutube": "6 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@AlexCGDesign",
-            "facebook": "facebook.com/Alexcg-Design-407575729669523",
-            "twitter": "twitter.com/alexcgdesign",
+            "youtube": "https://www.youtube.com/@AlexCGDesign",
+            "facebook": "https://www.facebook.com/Alexcg-Design-407575729669523",
+            "twitter": "https://www.twitter.com/alexcgdesign",
             "twitch": "",
             "instagram": "",
             "tiktok": ""
@@ -1849,11 +1848,11 @@ const data = [
         "timeYoutube": "9 meses",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@ChrisGamezProfe",
-            "facebook": "facebook.com/chrisgamezprofe",
+            "youtube": "https://www.youtube.com/@ChrisGamezProfe",
+            "facebook": "https://www.facebook.com/chrisgamezprofe",
             "twitter": "",
-            "twitch": "twitch.tv/chrisgamezprofe",
-            "instagram": "instagram.com/chrisgamezprofe",
+            "twitch": "https://www.twitch.tv/chrisgamezprofe",
+            "instagram": "https://www.instagram.com/chrisgamezprofe",
             "tiktok": ""
         },
         "teaches": {
@@ -1889,7 +1888,7 @@ const data = [
         "timeYoutube": "11 meses",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@puntojson",
+            "youtube": "https://www.youtube.com/@puntojson",
             "facebook": "",
             "twitter": "",
             "twitch": "",
@@ -1925,7 +1924,7 @@ const data = [
         "timeYoutube": "8 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@VictorRamosDatSoft",
+            "youtube": "https://www.youtube.com/@VictorRamosDatSoft",
             "facebook": "",
             "twitter": "",
             "twitch": "",
@@ -1972,11 +1971,11 @@ const data = [
         "timeYoutube": "11 años",
         "idioma": "Español",
         "socialNetworks": {
-            "youtube": "www.youtube.com/@Develoteca",
-            "facebook": "facebook.com/develoteca",
+            "youtube": "https://www.youtube.com/@Develoteca",
+            "facebook": "https://www.facebook.com/develoteca",
             "twitter": "",
             "twitch": "",
-            "instagram": "instagram.com/develoteca",
+            "instagram": "https://www.instagram.com/develoteca",
             "tiktok": ""
         },
         "teaches": {
