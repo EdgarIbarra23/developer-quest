@@ -3,6 +3,7 @@ import { Checkbox, TextField } from '@mui/material';
 import { FiMenu } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [checkState, setCheckState] = useState(false)
@@ -23,7 +24,9 @@ const Navbar = () => {
                             checkedIcon={<IoClose className='text-[50px] text-white font-bold' />}
                         />
                     </div>
-                    <h1 className='text-[36px] font-semibold max-[767px]:text-[32px] max-[767px]:w-full min-[767px]:text-[20px] min-[1024px]:text-[36px]'>Developer Quest</h1>
+                    <Link to='/'>
+                        <h1 className='text-[36px] font-semibold max-[767px]:text-[32px] max-[767px]:w-full min-[767px]:text-[20px] min-[1024px]:text-[36px]'>Developer Quest</h1>
+                    </Link>
                 </div>
 
                 {/* Barra de Busqueda: solo se muestra para modo celular */}

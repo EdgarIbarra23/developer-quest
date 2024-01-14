@@ -2019,7 +2019,7 @@ const data = [
     }
 ]
 
-export const Data = () => {
+const Data = () => {
     return {
         languages,
         frameworks,
@@ -2028,3 +2028,5 @@ export const Data = () => {
         data
     }
 }
+
+export default Data
