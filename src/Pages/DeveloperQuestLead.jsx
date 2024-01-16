@@ -18,7 +18,12 @@ const DeveloperQuestLead = () => {
                             return (
                                 <Card
                                     key = {data.id}
-                                    data = {data}
+                                    id = {data.id} 
+                                    logo = {data.logo}
+                                    name = {data.name}
+                                    idioma = {data.idioma}
+                                    timeYoutube = {data.timeYoutube}
+                                    socialNetworks = {data.socialNetworks}
                                 />
                             )
                         })

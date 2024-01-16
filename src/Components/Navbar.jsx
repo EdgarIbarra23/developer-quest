@@ -3,7 +3,7 @@ import { Checkbox, TextField } from '@mui/material';
 import { FiMenu } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [checkState, setCheckState] = useState(false)
@@ -54,13 +54,29 @@ const Navbar = () => {
 
                     {/* Enlaces: son los que solo se muestran cuando no hay en modo celular */}
                     <div className="flex gap-10 font-semibold text-lg max-[767px]:hidden min-[767px]:gap-5 min-[1024px]:gap-8">
-                        <button>Lenguajes</button>
+                        <NavLink to='/eleccion/lenguajes'>
+                            <button>
+                                Lenguajes
+                            </button>
+                        </NavLink>
 
-                        <button>Frameworks</button>
+                        <NavLink to='/eleccion/frameworks'>
+                            <button>
+                                Frameworks
+                            </button>
+                        </NavLink>
 
-                        <button>Base de Datos</button>
+                        <NavLink to='/eleccion/baseDatos'>
+                            <button>
+                                Base de Datos
+                            </button>
+                        </NavLink>
 
-                        <button>IDEs</button>
+                        <NavLink to='/eleccion/Ides'>
+                            <button>
+                                IDEs
+                            </button>
+                        </NavLink>
                     </div>
 
                     {/* Enlaces: la misma que la anterior, cosa que cambia es que solo muestra en celular y hace la accion de aparecer y desaparecer al dar click al menu */}

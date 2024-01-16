@@ -15,15 +15,13 @@ export const SocialLink = ({ url, image, alt }) => {
     )
 }
 
-const Card = ({ data }) => {
-    const {id, logo, name, idioma, timeYoutube, socialNetworks } = data;
+const Card = ({ id, logo, name, idioma, timeYoutube, socialNetworks, technologies }) => {
 
     return (
-        <div className="bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[17rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px]">
-
+        <div className={technologies.length === 0 ? 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[17rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px]' : 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[19rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px] relative'}>
             <div className="flex justify-start items-center h-[10rem]">
                 <div className="flex justify-center items-center w-[50%] h-full">
-                    <img src={logo} alt={name} className='rounded-full w-[7rem] shadow-xl max-[767px]:w-[5rem]'/>
+                    <img src={logo} alt={name} className='rounded-full w-[7rem] shadow-xl max-[767px]:w-[5rem]' />
                 </div>
 
                 <div className="flex flex-col flex-wrap w-full">
@@ -33,52 +31,67 @@ const Card = ({ data }) => {
                 </div>
             </div>
 
-            <div className="flex justify-start items-center gap-2 px-3 w-full">
+            <div className="flex justify-start items-center gap-2 px-3 w-full flex-wrap">
 
-                <SocialLink
-                    url={socialNetworks.youtube}
-                    image={Youtube}
-                    alt='YouTube'
-                />
+                {
+                    technologies.length === 0 ? null : technologies.map(tecnology => <img key={tecnology.name} src={tecnology.logo} alt={tecnology.name} title={tecnology.name} className='w-[45px]'/>)
+                }
 
-                <SocialLink
-                    url={socialNetworks.facebook}
-                    image={Facebook}
-                    alt='Facebook'
-                />
+                {
+                    socialNetworks.length === 0 ? null : (
+                        <>
+                            <SocialLink
+                                url={socialNetworks.youtube}
+                                image={Youtube}
+                                alt='YouTube'
+                            />
 
-                <SocialLink
-                    url={socialNetworks.twitter}
-                    image={Twitter}
-                    alt='Twitter'
-                />
+                            <SocialLink
+                                url={socialNetworks.facebook}
+                                image={Facebook}
+                                alt='Facebook'
+                            />
 
-                <SocialLink
-                    url={socialNetworks.twitch}
-                    image={Twitch}
-                    alt='Twitch'
-                />
+                            <SocialLink
+                                url={socialNetworks.twitter}
+                                image={Twitter}
+                                alt='Twitter'
+                            />
 
-                <SocialLink
-                    url={socialNetworks.instagram}
-                    image={Instagram}
-                    alt='Instagram'
-                />
+                            <SocialLink
+                                url={socialNetworks.twitch}
+                                image={Twitch}
+                                alt='Twitch'
+                            />
 
-                <SocialLink
-                    url={socialNetworks.tiktok}
-                    image={TikTok}
-                    alt='Tiktok'
-                />
+                            <SocialLink
+                                url={socialNetworks.instagram}
+                                image={Instagram}
+                                alt='Instagram'
+                            />
+
+                            <SocialLink
+                                url={socialNetworks.tiktok}
+                                image={TikTok}
+                                alt='Tiktok'
+                            />
+                        </>
+                    )
+                }
             </div>
-
-            <div className="flex justify-end items-center w-full px-5 py-1">
+            
+            <div className={technologies.length === 0 ? 'flex justify-end items-center w-full px-5 py-1' : 'flex justify-end items-center w-full px-5 py-3 absolute bottom-0'}>
                 <Link to={`/perfil/${id}`}>
                     <button className='border-black border-[1px] rounded-[16px] bg-[#242F40] text-white px-6 py-2 text-[20px] font-bold'>Ver más</button>
                 </Link>
             </div>
         </div>
     )
+}
+
+Card.defaultProps = {
+    socialNetworks: '',
+    technologies: ''
 }
 
 export default Card
