@@ -7,15 +7,15 @@ import Data from '../Helpers/Data'
 const ViewItems = ({ data, listTechnology, text, statusChange }) => {
 
     const [selectTecnology, setSelectTecnology] = useState('');
-    const [state, setState] = useState(statusChange)
+    const [stateClick, setStateClick] = useState(statusChange)
 
     useEffect(() => {
-        setState(statusChange)
+        setStateClick(statusChange)
     }, [text])
 
     const handleTecnology = (e) => {
         setSelectTecnology(e.target.innerText);
-        setState(true)
+        setStateClick(true)
     }
 
     return (
@@ -88,7 +88,7 @@ const ViewItems = ({ data, listTechnology, text, statusChange }) => {
                                     }
 
                                     return (
-                                        state
+                                        stateClick
                                             ? (
                                                 tecnology && tecnology.length > 0 && (
                                                     tecnology.map((tech) => {
@@ -105,7 +105,7 @@ const ViewItems = ({ data, listTechnology, text, statusChange }) => {
                                                                 />
                                                             );
                                                         } else if (selectTecnology === undefined){
-                                                            setState(false)
+                                                            setStateClick(false)
                                                         }
                                                         return null;
                                                     })

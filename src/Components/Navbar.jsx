@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({handleValueTextField, textfield ,setTextfield}) => {
     const [checkState, setCheckState] = useState(false)
 
     const handleChange = () => {
@@ -32,11 +32,13 @@ const Navbar = () => {
                 {/* Barra de Busqueda: solo se muestra para modo celular */}
                 {
                     checkState ? null : (
-                        <form className='hidden max-[767px]:block max-[767px]:pt-2'>
+                        <form className='hidden max-[767px]:block max-[767px]:pt-2' onSubmit={handleValueTextField}>
                             <TextField
                                 type='text'
                                 variant="outlined"
                                 className='rounded bg-white w-[230px] max-[767px]:w-[300px]'
+                                value={textfield}
+                                onChange={(e) => setTextfield(e.target.value)}
                                 InputProps={{
                                     endAdornment: (
                                         <CiSearch
@@ -114,11 +116,13 @@ const Navbar = () => {
                     }
 
                     {/* Barra de Busqueda: solo se muestra para modo que no son celular */}
-                    <form className='max-[767px]:hidden'>
+                    <form className='max-[767px]:hidden' onSubmit={handleValueTextField}>
                         <TextField
                             type='text'
                             variant="outlined"
                             className='rounded bg-white w-[230px] min-[767px]:w-[200px] min-[1024px]:w-[200px] min-[1280px]:w-[230px]'
+                            value={textfield}
+                            onChange={(e) => setTextfield(e.target.value)}
                             InputProps={{
                                 endAdornment: (
                                     <CiSearch
