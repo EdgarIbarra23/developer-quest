@@ -43,7 +43,6 @@ const Navbar = () => {
                                             className='text-[40px]'
                                         />
                                     ),
-                                    style: { color: 'black' },
                                 }}
                             />
                         </form>
@@ -83,25 +82,33 @@ const Navbar = () => {
                     {
                         checkState && (
                             <div className="flex font-semibold max-[767px]:text-[23px] max-[767px]:flex-col max-[767px]:w-full max-[767px]:gap-0 max-[767px]:pt-5 min-[767px]:hidden min-[1024px]:hidden min-[1279px]:hidden min-[1280px]:hidden">
-                                <button
-                                    className='max-[767px]:border-t-[2px] max-[767px]:border-b-[1px] max-[767px]:border-black max-[767px]:py-3'>
-                                    Lenguajes
-                                </button>
+                                <NavLink to='/eleccion/lenguajes'>
+                                    <button
+                                        className='max-[767px]:border-t-[2px] max-[767px]:border-b-[1px] max-[767px]:border-black max-[767px]:py-3 w-full'>
+                                        Lenguajes
+                                    </button>
+                                </NavLink>
 
-                                <button
-                                    className='max-[767px]:border-t-[1px] max-[767px]:border-b-[1px] max-[767px]:border-black max-[767px]:py-3'>
-                                    Frameworks
-                                </button>
+                                <NavLink to='/eleccion/frameworks'>
+                                    <button
+                                        className='max-[767px]:border-t-[1px] max-[767px]:border-b-[1px] max-[767px]:border-black max-[767px]:py-3 w-full'>
+                                        Frameworks
+                                    </button>
+                                </NavLink>
 
-                                <button
-                                    className='max-[767px]:border-t-[1px] max-[767px]:border-b-[1px] max-[767px]:border-black max-[767px]:py-3'>
-                                    Base de Datos
-                                </button>
+                                <NavLink to='/eleccion/baseDatos'>
+                                    <button
+                                        className='max-[767px]:border-t-[1px] max-[767px]:border-b-[1px] max-[767px]:border-black max-[767px]:py-3 w-full'>
+                                        Base de Datos
+                                    </button>
+                                </NavLink>
 
-                                <button
-                                    className='max-[767px]:border-t-[1px] max-[767px]:border-b-[2px] max-[767px]:border-black max-[767px]:py-3'>
-                                    IDEs
-                                </button>
+                                <NavLink to='/eleccion/Ides'>
+                                    <button
+                                        className='max-[767px]:border-t-[1px] max-[767px]:border-b-[2px] max-[767px]:border-black max-[767px]:py-3 w-full'>
+                                        IDEs
+                                    </button>
+                                </NavLink>
                             </div>
                         )
                     }

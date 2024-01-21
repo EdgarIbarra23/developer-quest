@@ -1,12 +1,22 @@
 import { Autocomplete, List, ListItemButton, ListItemText, ListSubheader, TextField } from '@mui/material'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Card from '../Components/Card'
 import Data from '../Helpers/Data'
 
-const ViewItems = ({ data, technologies, listTechnology, text }) => {
+const ViewItems = ({ data, listTechnology, text, statusChange }) => {
 
-    console.log(technologies)
+    const [selectTecnology, setSelectTecnology] = useState('');
+    const [state, setState] = useState(statusChange)
+
+    useEffect(() => {
+        setState(statusChange)
+    }, [text])
+
+    const handleTecnology = (e) => {
+        setSelectTecnology(e.target.innerText);
+        setState(true)
+    }
 
     return (
         <>
@@ -21,6 +31,7 @@ const ViewItems = ({ data, technologies, listTechnology, text }) => {
                                 options={listTechnology.map(listTechnology => listTechnology.name)}
                                 sx={{ width: 300 }}
                                 renderInput={(params) => <TextField {...params} label={text} />}
+                                onChange={handleTecnology}
                             />
                         </div>
 
@@ -49,7 +60,8 @@ const ViewItems = ({ data, technologies, listTechnology, text }) => {
                                         <ListItemButton
                                             component="a"
                                             key={listTechnology.name}
-                                            style={{ border: '1px solid black' }}>
+                                            style={{ border: '1px solid black' }}
+                                            onClick={handleTecnology}>
                                             <ListItemText
                                                 primary={listTechnology.name} />
                                         </ListItemButton>
@@ -62,20 +74,60 @@ const ViewItems = ({ data, technologies, listTechnology, text }) => {
                     <div className="flex justify-center items-center w-[55rem] max-[767px]:w-full max-[1279px]:w-full">
                         <div className="flex flex-wrap justify-start gap-5 max-[767px]:flex-col max-[1279px]:justify-center">
                             {
-                                data.map((dataItem) => (
-                                    dataItem.teaches.languages.length <= 0 ? null : (
-                                        <Card
-                                            key={dataItem.id}
-                                            id={dataItem.id}
-                                            logo={dataItem.logo}
-                                            name={dataItem.name}
-                                            idioma={dataItem.idioma}
-                                            timeYoutube={dataItem.timeYoutube}
-                                            technologies={text === 'Lenguajes' ? dataItem.teaches.languages : text === 'Frameworks' ? dataItem.teaches.frameworks : null}
-                                        />
-                                    )
-                                ))
+                                data.map((dataItem) => {
+                                    let tecnology
+
+                                    if (text === 'Lenguajes') {
+                                        tecnology = dataItem.teaches.languages;
+                                    } else if (text === 'Frameworks') {
+                                        tecnology = dataItem.teaches.frameworks;
+                                    } else if (text === 'Base de Datos') {
+                                        tecnology = dataItem.teaches.queryLanguajes;
+                                    } else if (text === 'IDEs') {
+                                        tecnology = dataItem.teaches.ide;
+                                    }
+
+                                    return (
+                                        state
+                                            ? (
+                                                tecnology && tecnology.length > 0 && (
+                                                    tecnology.map((tech) => {
+                                                        if (tech.name === selectTecnology) {
+                                                            return (
+                                                                <Card
+                                                                    key={dataItem.id}
+                                                                    id={dataItem.id}
+                                                                    logo={dataItem.logo}
+                                                                    name={dataItem.name}
+                                                                    idioma={dataItem.idioma}
+                                                                    timeYoutube={dataItem.timeYoutube}
+                                                                    technologies={tecnology}
+                                                                />
+                                                            );
+                                                        } else if (selectTecnology === undefined){
+                                                            setState(false)
+                                                        }
+                                                        return null;
+                                                    })
+                                                )
+                                            )
+
+                                            : (
+                                                tecnology && tecnology.length > 0 && (
+                                                    <Card
+                                                        key={dataItem.id}
+                                                        id={dataItem.id}
+                                                        logo={dataItem.logo}
+                                                        name={dataItem.name}
+                                                        idioma={dataItem.idioma}
+                                                        timeYoutube={dataItem.timeYoutube}
+                                                        technologies={tecnology}
+                                                    />)
+                                            )
+                                    );
+                                })
                             }
+
                         </div>
                     </div>
                 </div>
@@ -90,16 +142,20 @@ const DeveloperQuestItems = () => {
     const { data, languages, frameworks, queryLanguajes, ide } = Data()
 
     useEffect(() => {
-        data
+        data,
+            languages,
+            frameworks,
+            queryLanguajes,
+            ide
     }, [])
 
     return opcion === 'lenguajes'
         ? <>
             <ViewItems
                 data={data}
-                technologies={data.map(data => data.teaches.languages)}
                 listTechnology={languages}
                 text='Lenguajes'
+                statusChange= {false}
             />
         </>
 
@@ -107,48 +163,30 @@ const DeveloperQuestItems = () => {
             ? <>
                 <ViewItems
                     data={data}
-                    technologies={data.map(data => data.teaches.frameworks)}
                     listTechnology={frameworks}
                     text='Frameworks'
+                    statusChange={false}
                 />
             </>
 
             : opcion === 'baseDatos'
                 ? <>
-                    {
-                        data.map(data => {
-                            return data.teaches.queryLanguajes.length <= 0 ? null : (
-                                <Card
-                                    key={data.id}
-                                    id={data.id}
-                                    logo={data.logo}
-                                    name={data.name}
-                                    idioma={data.idioma}
-                                    timeYoutube={data.timeYoutube}
-                                    technologies={data.teaches.queryLanguajes}
-                                />
-                            )
-                        })
-                    }
+                    <ViewItems
+                        data={data}
+                        listTechnology={queryLanguajes}
+                        text='Base de Datos'
+                        statusChange={false}
+                    />
                 </>
 
                 : opcion === 'Ides'
                     ? <>
-                        {
-                            data.map(data => {
-                                return data.teaches.ide.length <= 0 ? null : (
-                                    <Card
-                                        key={data.id}
-                                        id={data.id}
-                                        logo={data.logo}
-                                        name={data.name}
-                                        idioma={data.idioma}
-                                        timeYoutube={data.timeYoutube}
-                                        technologies={data.teaches.ide}
-                                    />
-                                )
-                            })
-                        }
+                        <ViewItems
+                            data={data}
+                            listTechnology={ide}
+                            text='IDEs'
+                            statusChange={false}
+                        />
                     </>
 
                     : null

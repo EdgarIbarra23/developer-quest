@@ -562,7 +562,6 @@ const data = [
                 frameworks[6]
             ],
 
-
             "queryLanguajes": [
                 queryLanguajes[0],
                 queryLanguajes[1],

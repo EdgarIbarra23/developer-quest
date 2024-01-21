@@ -18,7 +18,7 @@ export const SocialLink = ({ url, image, alt }) => {
 const Card = ({ id, logo, name, idioma, timeYoutube, socialNetworks, technologies }) => {
 
     return (
-        <div className={technologies.length === 0 ? 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[17rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px]' : 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[19rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px] relative'}>
+        <div className={technologies.length === 0 ? 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[17rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px]' : 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[22rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px] relative'}>
             <div className="flex justify-start items-center h-[10rem]">
                 <div className="flex justify-center items-center w-[50%] h-full">
                     <img src={logo} alt={name} className='rounded-full w-[7rem] shadow-xl max-[767px]:w-[5rem]' />
@@ -30,7 +30,6 @@ const Card = ({ id, logo, name, idioma, timeYoutube, socialNetworks, technologie
                     <p className='text-[15px] font-bold'>Tiempo en Youtube: {timeYoutube}</p>
                 </div>
             </div>
-
             <div className="flex justify-start items-center gap-2 px-3 w-full flex-wrap">
 
                 {
@@ -79,6 +78,7 @@ const Card = ({ id, logo, name, idioma, timeYoutube, socialNetworks, technologie
                     )
                 }
             </div>
+
             
             <div className={technologies.length === 0 ? 'flex justify-end items-center w-full px-5 py-1' : 'flex justify-end items-center w-full px-5 py-3 absolute bottom-0'}>
                 <Link to={`/perfil/${id}`}>
