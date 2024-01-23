@@ -20,10 +20,8 @@ const DeveloperQuestPerfil = () => {
     const { perfilId } = useParams()
     const { data } = Data()
 
-    // Muestra todos los Datos del ID actual
     const perfilData = data.find((perfil) => perfil.id === parseInt(perfilId));
 
-    // Tomar 5 Canales y que sean diferentes del actual
     const moreUsers = data.filter((usuario) => usuario.id !== parseInt(perfilId));
     const shuffledUsers = moreUsers.sort(() => Math.random() - 0.5);
     const fiveUsers = shuffledUsers.slice(0, 5);

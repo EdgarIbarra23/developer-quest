@@ -1,16 +1,30 @@
-import React, { useState } from 'react'
-import { Checkbox, TextField } from '@mui/material';
+import React, { useEffect, useState } from 'react'
+import { Autocomplete, Checkbox, TextField } from '@mui/material';
 import { FiMenu } from "react-icons/fi";
-import { CiSearch } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import Data from '../Helpers/Data';
 
-const Navbar = ({handleValueTextField, textfield ,setTextfield}) => {
+const Navbar = ({ handleValueTextField, textfield, setTextfield }) => {
     const [checkState, setCheckState] = useState(false)
+
+    const { languages, frameworks, queryLanguajes, ide } = Data();
+    const tecnologies = [languages, frameworks, queryLanguajes, ide];
+    const tecnology = tecnologies.flatMap(tecno => tecno.map(tec => tec.name))
+
+    const navigate = useNavigate()
 
     const handleChange = () => {
         setCheckState(!checkState);
     }
+
+    useEffect(() => {
+        languages,
+            frameworks,
+            queryLanguajes,
+            ide,
+            tecnology
+    }, [])
 
     return (
         <div className="bg-[#242F40] text-white px-[20px] py-[10px] max-[767px]:px-0">
@@ -28,32 +42,26 @@ const Navbar = ({handleValueTextField, textfield ,setTextfield}) => {
                         <h1 className='text-[36px] font-semibold max-[767px]:text-[32px] max-[767px]:w-full min-[767px]:text-[20px] min-[1024px]:text-[36px]'>Developer Quest</h1>
                     </Link>
                 </div>
-
-                {/* Barra de Busqueda: solo se muestra para modo celular */}
                 {
                     checkState ? null : (
                         <form className='hidden max-[767px]:block max-[767px]:pt-2' onSubmit={handleValueTextField}>
-                            <TextField
-                                type='text'
-                                variant="outlined"
-                                className='rounded bg-white w-[230px] max-[767px]:w-[300px]'
-                                value={textfield}
-                                onChange={(e) => setTextfield(e.target.value)}
-                                InputProps={{
-                                    endAdornment: (
-                                        <CiSearch
-                                            className='text-[40px]'
-                                        />
-                                    ),
-                                }}
+                            <Autocomplete
+                                disablePortal
+                                id="combo-box-demo"
+                                options={tecnology}
+                                onChange={(e, newValue) => setTextfield(newValue)}
+                                value={tecnology.includes(textfield) ? textfield : null}
+                                sx={{ width: 300 }}
+                                className='rounded bg-white w-[230px] min-[767px]:w-[200px] min-[1024px]:w-[200px] min-[1280px]:w-[230px]'
+                                renderInput={(params) => <TextField {...params}
+                                    placeholder="Seleccione la Tecnologia"
+                                    onClick={() => { navigate("/") }} />}
                             />
                         </form>
                     )
                 }
 
                 <div className="flex justify-center items-center gap-[25px] max-[767px]:flex-col max-[767px]:w-full min-[767px]:gap-[15px] min-[1024px]:gap-[25px]">
-
-                    {/* Enlaces: son los que solo se muestran cuando no hay en modo celular */}
                     <div className="flex gap-10 font-semibold text-lg max-[767px]:hidden min-[767px]:gap-5 min-[1024px]:gap-8">
                         <NavLink to='/eleccion/lenguajes'>
                             <button>
@@ -79,8 +87,6 @@ const Navbar = ({handleValueTextField, textfield ,setTextfield}) => {
                             </button>
                         </NavLink>
                     </div>
-
-                    {/* Enlaces: la misma que la anterior, cosa que cambia es que solo muestra en celular y hace la accion de aparecer y desaparecer al dar click al menu */}
                     {
                         checkState && (
                             <div className="flex font-semibold max-[767px]:text-[23px] max-[767px]:flex-col max-[767px]:w-full max-[767px]:gap-0 max-[767px]:pt-5 min-[767px]:hidden min-[1024px]:hidden min-[1279px]:hidden min-[1280px]:hidden">
@@ -114,22 +120,18 @@ const Navbar = ({handleValueTextField, textfield ,setTextfield}) => {
                             </div>
                         )
                     }
-
-                    {/* Barra de Busqueda: solo se muestra para modo que no son celular */}
                     <form className='max-[767px]:hidden' onSubmit={handleValueTextField}>
-                        <TextField
-                            type='text'
-                            variant="outlined"
+                        <Autocomplete
+                            disablePortal
+                            id="combo-box-demo"
+                            options={tecnology}
+                            onChange={(e, newValue) => setTextfield(newValue)}
+                            value={tecnology.includes(textfield) ? textfield : null}
+                            sx={{ width: 300 }}
                             className='rounded bg-white w-[230px] min-[767px]:w-[200px] min-[1024px]:w-[200px] min-[1280px]:w-[230px]'
-                            value={textfield}
-                            onChange={(e) => setTextfield(e.target.value)}
-                            InputProps={{
-                                endAdornment: (
-                                    <CiSearch
-                                        className='text-[40px]'
-                                    />
-                                ),
-                            }}
+                            renderInput={(params) => <TextField {...params}
+                                placeholder="Seleccione la Tecnologia"
+                                onClick={() => { textfield === '' ? null : null }}/>}
                         />
                     </form>
                 </div>
