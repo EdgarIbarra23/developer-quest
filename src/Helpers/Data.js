@@ -50,6 +50,10 @@ import NestJs from '../assets/Framworks/nestJs.svg'
 import MaterialUi from '../assets/Framworks/materialUi.webp'
 import ExpressJs from '../assets/Framworks/expressJs.webp'
 import AspNet from '../assets/Framworks/aspNet.webp'
+import Astro from '../assets/Framworks/astro.svg'
+import SolidJs from '../assets/Framworks/solid.webp'
+import RemixJs from '../assets/Framworks/remix.svg'
+import OnRails from '../assets/Framworks/rails.webp'
 
 // Query Languages
 import MariaDb from '../assets/QueryLanguages/mariaDb.webp'
@@ -61,6 +65,7 @@ import PostgreSQL from '../assets/QueryLanguages/postgreSql.webp'
 import SQLite from '../assets/QueryLanguages/sqlite.webp'
 import Oracle from '../assets/QueryLanguages/oracle.webp'
 import FirebirdSQL from '../assets/QueryLanguages/firebird.webp'
+import Cassandra from '../assets/QueryLanguages/cassandra.webp'
 
 // Ide
 import AndroidStudio from '../assets/Ide/androidStudio.webp'
@@ -396,9 +401,37 @@ const frameworks = [
 
     // 29
     {
-        "name": "ASP.NET ",
+        "name": "ASP.NET",
         "language": languages[5],
         "logo": AspNet
+    },
+
+    // 30
+    {
+        "name": "Astro Js",
+        "language": languages[2],
+        "logo": Astro
+    },
+
+    // 31
+    {
+        "name": "Solid Js",
+        "language": languages[2],
+        "logo": SolidJs
+    },
+
+    // 32
+    {
+        "name": "Remix Js",
+        "language": languages[2],
+        "logo": RemixJs
+    },
+
+    // 33
+    {
+        "name": "Rails",
+        "language": languages[13],
+        "logo": OnRails
     },
 ];
 
@@ -464,6 +497,13 @@ const queryLanguajes = [
         "name": "Firebird SQL",
         "SGBD": "SQL",
         "logo": FirebirdSQL
+    },
+
+    // 9
+    {
+        "name": "Cassandra",
+        "SGBD": "NoSQL",
+        "logo": Cassandra
     },
 ];
 
@@ -665,7 +705,8 @@ const data = [
             ],
 
             "frameworks": [
-                frameworks[3]
+                frameworks[3],
+                frameworks[4],
             ],
 
             "queryLanguajes": [],
@@ -1645,21 +1686,33 @@ const data = [
         "teaches": {
             "projectsFrontEnd": true,
 
-            "projectsFullStack": false,
+            "projectsFullStack": true,
 
             "languages": [
+                languages[0],
                 languages[1],
                 languages[2],
-                languages[7]
+                languages[7],
+                languages[17],
             ],
 
             "frameworks": [
                 frameworks[3],
-                frameworks[23]
+                frameworks[4],
+                frameworks[11],
+                frameworks[23],
+                frameworks[24],
+                frameworks[25],
+                frameworks[28],
+                frameworks[30],
+                frameworks[31],
+                frameworks[32],
             ],
 
 
-            "queryLanguajes": [],
+            "queryLanguajes": [
+                queryLanguajes[1]
+            ],
 
             "ide": []
         }
@@ -1794,7 +1847,9 @@ const data = [
             "frameworks": [],
 
 
-            "queryLanguajes": [],
+            "queryLanguajes": [
+                queryLanguajes[1]
+            ],
 
             "ide": [
                 ide[0]
@@ -1950,6 +2005,7 @@ const data = [
             "queryLanguajes": [
                 queryLanguajes[0],
                 queryLanguajes[1],
+                queryLanguajes[2],
                 queryLanguajes[5],
                 queryLanguajes[6],
                 queryLanguajes[7],
@@ -2015,7 +2071,620 @@ const data = [
                 ide[9]
             ]
         }
-    }
+    },
+
+    // 26/01/2024 - Update V1.1
+    {
+        "id": 37,
+        "name": "juacaxDev",
+        "logo": "https://yt3.googleusercontent.com/RSYeS8USzwfer6UcQIRGV8S3VkTEB6xOuGYBHJbZ56oF6kSEstvn4nr4wEQtSC5Ejs72aPhehA=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "3 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://www.youtube.com/@juacaxDev",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "https://www.twitch.tv/juacaxdev",
+            "instagram": "https://www.instagram.com/juacaxdev",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": false,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[12],
+            ],
+
+            "frameworks": [
+                frameworks[9]
+            ],
+
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 38,
+        "name": "jonmircha",
+        "logo": "https://yt3.googleusercontent.com/cxZ0gdwcKZINPA0wcSjICgwaa_dLjwJUPcYjpUJTeDoZfB_gVumTpKCOACF9fiPHvwBvXpV6=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "12 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/jonmircha",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[2],
+                languages[3],
+            ],
+
+            "frameworks": [
+                frameworks[3],
+                frameworks[10],
+                frameworks[23],
+            ],
+
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 39,
+        "name": "Sangam Mukherjee",
+        "logo": "https://yt3.googleusercontent.com/TXmfrcupVfI_Ppetv8LW9-Smu084Xt682aR6-WsuzI64Lqaysusli3lwt07-du-UlK6HusNueg=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "12 años",
+        "idioma": "Ingles",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@sangammukherjee3009",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[0],
+                languages[1],
+            ],
+
+            "frameworks": [
+                frameworks[3],
+                frameworks[9],
+                frameworks[25],
+            ],
+
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 40,
+        "name": "Reactive Bootcamp",
+        "logo": "https://yt3.googleusercontent.com/4-gG1U7CrlRiZoMOoCFL8L2ctM7lGch9Adn0roypvhHHTlbfdDS4UiLKBU0T-RPnCFDFokzrAek=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "5 meses",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@ReactiveBootcamp",
+            "facebook": "https://facebook.com/reactivebootcam",
+            "twitter": "",
+            "twitch": "https://twitch.tv/reactivebootcamp",
+            "instagram": "https://instagram.com/reactivebootcamp",
+            "tiktok": "https://tiktok.com/@reactivebootcamp"
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": true,
+
+            "languages": [
+            ],
+
+            "frameworks": [
+                frameworks[9],
+            ],
+
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 41,
+        "name": "freeCodeCamp.org",
+        "logo": "https://yt3.googleusercontent.com/ytc/AIf8zZTDkajQxPa4sjDOW-c3er1szXkSAO-H9TiF4-8u_Q=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "8 años",
+        "idioma": "Ingles",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@freecodecamp",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": true,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[2],
+                languages[3],
+                languages[4],
+                languages[5],
+                languages[6],
+                languages[7],
+                languages[8],
+                languages[9],
+                languages[10],
+                languages[11],
+                languages[12],
+                languages[13],
+                languages[14],
+                languages[15],
+                languages[16],
+                languages[17],
+                languages[18],
+            ],
+
+            "frameworks": [
+                frameworks[2],
+                frameworks[3],
+                frameworks[4],
+                frameworks[6],
+                frameworks[7],
+                frameworks[8],
+                frameworks[9],
+                frameworks[10],
+                frameworks[11],
+                frameworks[12],
+                frameworks[15],
+                frameworks[16],
+                frameworks[19],
+                frameworks[21],
+                frameworks[22],
+                frameworks[23],
+                frameworks[24],
+                frameworks[25],
+                frameworks[26],
+                frameworks[28],
+                frameworks[30],
+                frameworks[32],
+                frameworks[33],
+            ],
+
+
+            "queryLanguajes": [
+                queryLanguajes[1],
+                queryLanguajes[2],
+                queryLanguajes[3],
+                queryLanguajes[4],
+                queryLanguajes[5],
+                queryLanguajes[9],
+            ],
+
+            "ide": [
+                ide[3],
+                ide[6],
+            ]
+        }
+    },
+
+    {
+        "id": 42,
+        "name": "HuXn WebDev",
+        "logo": "https://yt3.googleusercontent.com/j2GSWhMI1hscXQu7H6MH9A1_aQ25GsVFzyQ9revo9Gjh5t68zQUftrc65kMU7haF63NZ2t_s=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "2 años",
+        "idioma": "Ingles",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@huxnwebdev",
+            "facebook": "",
+            "twitter": "https://twitter.com/huxnwebdev",
+            "twitch": "",
+            "instagram": "https://instagram.com/huxn_webdev",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": true,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[7],
+                languages[18],
+            ],
+
+            "frameworks": [
+                frameworks[2],
+                frameworks[3],
+                frameworks[11],
+                frameworks[16],
+                frameworks[25],
+            ],
+
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+                ide[1]
+            ]
+        }
+    },
+
+    {
+        "id": 43,
+        "name": "Gentleman Programming",
+        "logo": "https://yt3.googleusercontent.com/RerL_HygEZuzI-VMS6GRtuSneViN7j6fjCYIGPNqzoLGlbBd0C4GKqBu3g7hJWiEJskeoYBc=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "3 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@GentlemanProgramming",
+            "facebook": "https://facebook.com/groups/541544337043760",
+            "twitter": "https://twitter.com/G_Programming",
+            "twitch": "https://twitch.tv/gentleman_programming/schedule",
+            "instagram": "https://instagram.com/gentlemanprogramming",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": true,
+
+            "projectsFullStack": true,
+
+            "languages": [
+            ],
+
+            "frameworks": [
+                frameworks[3],
+                frameworks[4],
+                frameworks[25],
+            ],
+
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 44,
+        "name": "UskoKruM2010",
+        "logo": "https://yt3.googleusercontent.com/qZjkh83GzN6D_aEIW8fIQqmZD3yEX10VGt7lJnzNFhZwglGp2UC_7EaSZUW1mg5D67mQ3kY7aw=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "13 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@UskoKruM2010",
+            "facebook": "https://facebook.com/UskoKruM2010",
+            "twitter": "https://twitter.com/UskoKruM2010",
+            "twitch": "",
+            "instagram": "https://instagram.com/uskokrum2010",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[0],
+                languages[2],
+                languages[3],
+                languages[4],
+                languages[5],
+                languages[6],
+                languages[16],
+            ],
+
+            "frameworks": [
+                frameworks[15],
+                frameworks[23],
+            ],
+
+            "queryLanguajes": [
+                queryLanguajes[1],
+                queryLanguajes[2],
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 45,
+        "name": "Vida MRR - Programacion web",
+        "logo": "https://yt3.googleusercontent.com/NL0SFt_bjFdk3OSpQXgq-9zQn4hD_OdyFDTSlkD-J8x5u69wr4LOlYU2xaBdwkMKhOyS4pAHCQ=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "13 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@vidamrr",
+            "facebook": "",
+            "twitter": "https://twitter.com/vidamrr",
+            "twitch": "https://twitch.tv/vidamrr",
+            "instagram": "https://instagram.com/vidamrr",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": true,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[1],
+                languages[3],
+                languages[7],
+            ],
+
+            "frameworks": [
+                frameworks[2],
+                frameworks[3],
+                frameworks[4],
+                frameworks[10],
+                frameworks[11],
+                frameworks[12],
+                frameworks[16],
+                frameworks[23],
+                frameworks[24],
+                frameworks[25],
+                frameworks[28],
+                frameworks[30],
+            ],
+
+            "queryLanguajes": [
+                queryLanguajes[1]
+            ],
+
+            "ide": [
+                ide[9]
+            ]
+        }
+    },
+
+    {
+        "id": 46,
+        "name": "Pablo Gallardo Dev",
+        "logo": "https://yt3.googleusercontent.com/YT4awl6PyFw-WZmtEUxx_0IwvF3PmruSC1GUie7YoiuVH0PnMjXF3fZEQ8hg8uo-VyGqIDq3Fg=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "2 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@PabloGallardoDev",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "https://twitch.tv/pablogallardodev",
+            "instagram": "https://instagram.com/pablogallardodev",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": true,
+
+            "projectsFullStack": false,
+
+            "languages": [
+            ],
+
+            "frameworks": [
+                frameworks[3],
+            ],
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 47,
+        "name": "CodigoMentor",
+        "logo": "https://yt3.googleusercontent.com/3Lk5AZ2xlzk__AE_21d4PX7-Fx7_PuaI8-jtm_K6z7Utn17OjJwsnyrBOUiUOcEYZbh2zuQM55w=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "2 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@CodigoMentorTutoriales",
+            "facebook": "https://facebook.com/CodigoMentor",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[2],
+                languages[4],
+                languages[6],
+            ],
+
+            "frameworks": [
+                frameworks[3],
+                frameworks[4],
+                frameworks[12],
+            ],
+
+            "queryLanguajes": [
+                queryLanguajes[1]
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 48,
+        "name": "Codificandolo",
+        "logo": "https://yt3.googleusercontent.com/DGbl_9iCw2ckDXzjai2tVlwH3BvQoGRo_kNMBlDk8DDSnp1ndnBqjOxm92gQKEn4P6Y15Uedaw=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "2 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@codificandolo",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[2],
+                languages[3],
+                languages[4],
+                languages[6],
+                languages[7],
+            ],
+
+            "frameworks": [
+                frameworks[2],
+                frameworks[3],
+                frameworks[12],
+            ],
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+                ide[0]
+            ]
+        }
+    },
+
+    {
+        "id": 49,
+        "name": "Programa Ya",
+        "logo": "https://yt3.googleusercontent.com/WYlfVWmrZM7YSDJyQ1kYk_uzUfLiYw8NXoLYFcrnOkbQNLKkVfYr2U9pFxR-hvgxu1QdM8I1=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "1 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@programaya8583",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": "https://tiktok.com/@luis_angelfc11"
+        },
+        "teaches": {
+            "projectsFrontEnd": true,
+
+            "projectsFullStack": false,
+
+            "languages": [
+                languages[0],
+                languages[2],
+            ],
+
+            "frameworks": [
+            ],
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 50,
+        "name": "pildorasinformaticas ",
+        "logo": "https://yt3.googleusercontent.com/ytc/AIf8zZSC2ajJWnBoaGccWNTxByb-WcQakVVZCxaOD_3a=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "11 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@pildorasinformaticas",
+            "facebook": "https://facebook.com/juan.pildorasinformaticas",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": false,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[2],
+                languages[3],
+                languages[4],
+                languages[5],
+                languages[6],
+                languages[9],
+                languages[11],
+            ],
+
+            "frameworks": [
+                frameworks[4],
+                frameworks[12],
+                frameworks[15],
+            ],
+
+            "queryLanguajes": [
+                queryLanguajes[1]
+            ],
+
+            "ide": [
+                ide[0]
+            ]
+        }
+    },
 ]
 
 const Data = () => {
