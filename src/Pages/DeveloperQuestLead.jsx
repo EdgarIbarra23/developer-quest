@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { Fab } from '@mui/material'
+import { FaArrowUp } from "react-icons/fa";
 import Card from '../Components/Card'
 import Data from '../Helpers/Data'
+import ScrollTop from '../Components/ScrollTop'
 
 const DeveloperQuestLead = ({ textfield, stateSearch }) => {
     const { data } = Data()
@@ -68,6 +71,11 @@ const DeveloperQuestLead = ({ textfield, stateSearch }) => {
                     }
                 </div>
             </div>
+            <ScrollTop>
+                <Fab size="small" aria-label="scroll back to top">
+                    <FaArrowUp/>
+                </Fab>
+            </ScrollTop>
         </>
     )
 }

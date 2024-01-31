@@ -1,8 +1,10 @@
-import { Autocomplete, List, ListItemButton, ListItemText, ListSubheader, TextField } from '@mui/material'
+import { Autocomplete, Fab, List, ListItemButton, ListItemText, ListSubheader, TextField } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { FaArrowUp } from "react-icons/fa";
 import Card from '../Components/Card'
 import Data from '../Helpers/Data'
+import ScrollTop from '../Components/ScrollTop'
 
 const ViewItems = ({ data, listTechnology, text, statusChange }) => {
 
@@ -19,7 +21,7 @@ const ViewItems = ({ data, listTechnology, text, statusChange }) => {
     }
 
     return (
-        <>
+        <>  
             <div className='flex justify-center py-6'>
                 <div className='flex justify-center items-start gap-10 max-[767px]:flex-col max-[767px]:items-center max-[1279px]:flex-col max-[1279px]:items-center'>
                     <div className='w-[15rem] max-[767px]:w-full max-[767px]:flex max-[767px]:justify-center max-[767px]:items-center'>
@@ -104,7 +106,7 @@ const ViewItems = ({ data, listTechnology, text, statusChange }) => {
                                                                     technologies={tecnology}
                                                                 />
                                                             );
-                                                        } else if (selectTecnology === undefined){
+                                                        } else if (selectTecnology === undefined) {
                                                             setStateClick(false)
                                                         }
                                                         return null;
@@ -132,6 +134,11 @@ const ViewItems = ({ data, listTechnology, text, statusChange }) => {
                     </div>
                 </div>
             </div>
+            <ScrollTop>
+                <Fab size="small" aria-label="scroll back to top">
+                    <FaArrowUp/>
+                </Fab>
+            </ScrollTop>
         </>
     )
 }
@@ -155,7 +162,7 @@ const DeveloperQuestItems = () => {
                 data={data}
                 listTechnology={languages}
                 text='Lenguajes'
-                statusChange= {false}
+                statusChange={false}
             />
         </>
 

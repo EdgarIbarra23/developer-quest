@@ -822,7 +822,9 @@ const data = [
                 frameworks[7]
             ],
 
-            "queryLanguajes": [],
+            "queryLanguajes": [
+                queryLanguajes[7]
+            ],
 
             "ide": []
         }
@@ -2073,7 +2075,7 @@ const data = [
         }
     },
 
-    // 26/01/2024 - Update V1.1
+    // Update V1.1
     {
         "id": 37,
         "name": "juacaxDev",
@@ -2682,6 +2684,170 @@ const data = [
 
             "ide": [
                 ide[0]
+            ]
+        }
+    },
+
+    {
+        "id": 51,
+        "name": "Danisable Programacion",
+        "logo": "https://yt3.googleusercontent.com/wv7-bP4GfvBX2OH-nK3I-d7lPOZ6IdJ0t3gIMgEwuBQOMpF5WOcFWzZdB13pRx2jL2XzwGPy=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "11 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@DanisableProgramacion",
+            "facebook": "https://facebook.com/DanisableGaming",
+            "twitter": "https://twitter.com/dani_sable",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": true,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[2],
+                languages[3],
+                languages[4],
+                languages[6],
+                languages[5],
+                languages[8],
+                languages[9],
+                languages[11],
+                languages[14],
+                languages[13],
+            ],
+
+            "frameworks": [
+                frameworks[0],
+                frameworks[10],
+            ],
+
+            "queryLanguajes": [
+                queryLanguajes[1],
+                queryLanguajes[6],
+            ],
+
+            "ide": [
+                ide[0],
+                ide[3],
+            ]
+        }
+    },
+
+    {
+        "id": 52,
+        "name": "Programacion F",
+        "logo": "https://yt3.googleusercontent.com/cPgz4MtFYKkT0ZBEVxkOWmLRdxi_lYeZELNyUix-oKfwNadYw5Ij_1gjcOCZzdfFSVBYnFnSTg=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "8 meses",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@fabioledezma7774",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": false,
+
+            "languages": [
+                languages[4],
+                languages[6],
+            ],
+
+            "frameworks": [
+            ],
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 53,
+        "name": "Manu Martín",
+        "logo": "https://yt3.googleusercontent.com/8Skfx9hR0flvQcKtTABKw8LMmlpGcDVeGKN8q8cI3lWBzq9LErgJQWgRIPBvxPsSfCo_PQF6KQ=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "2 años",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@manumrtf",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": false,
+
+            "languages": [
+            ],
+
+            "frameworks": [
+                frameworks[2],
+                frameworks[3],
+                frameworks[30],
+            ],
+
+            "queryLanguajes": [
+            ],
+
+            "ide": [
+            ]
+        }
+    },
+
+    {
+        "id": 54,
+        "name": "Soy Full Stack",
+        "logo": "https://yt3.googleusercontent.com/dprrmXcE7iwwuYnD3-s7n7sFhAKdN90M0jfn3MME7FI0_OLQaciGkyw-O_paqAxud5gCRsFwHQ=s176-c-k-c0x00ffffff-no-rj",
+        "timeYoutube": "11 meses",
+        "idioma": "Español",
+        "socialNetworks": {
+            "youtube": "https://youtube.com/@soyfullstack",
+            "facebook": "",
+            "twitter": "",
+            "twitch": "",
+            "instagram": "",
+            "tiktok": ""
+        },
+        "teaches": {
+            "projectsFrontEnd": false,
+
+            "projectsFullStack": false,
+
+            "languages": [
+                languages[0],
+                languages[1],
+                languages[2],
+                languages[3],
+            ],
+
+            "frameworks": [
+                frameworks[2],
+                frameworks[3],
+                frameworks[12],
+                frameworks[28],
+            ],
+
+            "queryLanguajes": [
+                queryLanguajes[1]
+            ],
+
+            "ide": [
             ]
         }
     },

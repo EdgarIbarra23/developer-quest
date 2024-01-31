@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Tooltip, Typography } from '@mui/material'
 import { MdExpandMore } from "react-icons/md";
 
 export const AccordionList = ({ expandedText, title, contents }) => {
@@ -16,7 +16,7 @@ export const AccordionList = ({ expandedText, title, contents }) => {
             <AccordionDetails >
                 <Typography className='flex justify-start items-center flex-wrap gap-5'>
                     {
-                        contents.map(content => <img key={content.name} src={content.logo} alt={content.name} title={content.name} className='w-[40px]' />)
+                        contents.map(content => <Tooltip key={content.name} title={content.name}><img src={content.logo} alt={content.name} className='w-[40px]'/></Tooltip>)
                     }
                 </Typography>
             </AccordionDetails>

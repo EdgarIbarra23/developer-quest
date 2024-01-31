@@ -9,6 +9,11 @@ import { Link, useParams } from 'react-router-dom'
 import { SocialLink } from '../Components/Card'
 import { AccordionList } from '../Components/AccordionList'
 import Data from '../Helpers/Data'
+import { Fab } from '@mui/material'
+import ScrollTop from '../Components/ScrollTop'
+import { FaArrowUp } from "react-icons/fa";
+
+
 
 export const RealizationProjects = ({ text, state }) => {
     return (
@@ -47,7 +52,6 @@ const DeveloperQuestPerfil = () => {
                                 <div className="flex flex-col gap-1 max-[767px]:w-[19rem]">
                                     <h1 className='text-[30px] font-bold max-[767px]:text-[33px] max-[767px]:pb-4'>{perfilData.name}</h1>
                                     <p className='text-[15px] font-bold max-[767px]:text-[17px]'>Idioma: {perfilData.idioma}</p>
-                                    <p className='text-[15px] font-bold max-[767px]:text-[17px]'>Tiempo en Youtube: {perfilData.timeYoutube}</p>
                                 </div>
 
                                 <div className="">
@@ -154,6 +158,11 @@ const DeveloperQuestPerfil = () => {
                     </div>
                 </div>
             </div>
+            <ScrollTop>
+                <Fab size="small" aria-label="scroll back to top">
+                    <FaArrowUp/>
+                </Fab>
+            </ScrollTop>
         </>
     )
 }

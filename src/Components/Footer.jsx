@@ -27,7 +27,7 @@ const Footer = () => {
                             <img src={Linkedin} alt="Linkedin" className='w-[50px] max-[767px]:w-[90px]'/>
                         </a>
                     </div>
-                    <p className='font-bold text-[20px] max-[767px]:text-[30px] max-[767px]:py-[10px]'>© {year}</p>
+                    <p className='font-bold text-[20px] max-[767px]:text-[30px] max-[767px]:py-[10px]'>© {year} - Edgar Ibarra</p>
                 </div>
             </div>
         </div>

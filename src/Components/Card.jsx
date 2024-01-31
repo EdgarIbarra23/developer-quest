@@ -15,7 +15,7 @@ export const SocialLink = ({ url, image, alt }) => {
     )
 }
 
-const Card = ({ id, logo, name, idioma, timeYoutube, socialNetworks, technologies }) => {
+const Card = ({ id, logo, name, idioma, socialNetworks, technologies }) => {
 
     return (
         <div className={technologies.length === 0 ? 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[17rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px]' : 'bg-[#E5E5E5] rounded-[16px] w-[26rem] h-[22rem] my-2 px-2 shadow-xl max-[767px]:w-[340px] max-[767px]:px-0 max-[1023px]:w-[340px] max-[1280px]:w-[400px] relative'}>
@@ -27,7 +27,6 @@ const Card = ({ id, logo, name, idioma, timeYoutube, socialNetworks, technologie
                 <div className="flex flex-col flex-wrap w-full">
                     <h3 className={name.length > 12 ? 'text-[25px] font-bold leading-1' : 'text-[35px] font-bold leading-1'}>{name}</h3>
                     <p className='text-[15px] font-bold'>Idioma: {idioma}</p>
-                    <p className='text-[15px] font-bold'>Tiempo en Youtube: {timeYoutube}</p>
                 </div>
             </div>
             <div className="flex justify-start items-center gap-2 px-3 w-full flex-wrap">
